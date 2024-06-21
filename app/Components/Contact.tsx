@@ -8,7 +8,7 @@ import InfinityScrollBanner from "./InfinityScrollBanner";
 
 export default function Contact() {
   return (
-    <div className="h-screen  bg-black top-0 z-0 grid grid-cols-4 grid-row-4 gap-4 p-4 overflow-hidden relative">
+    <div className="h-screen  bg-black top-0 z-0 grid grid-cols-4 grid-row-4 gap-4 p-4 overflow-hidden relative text-white">
       <div className="  col-span-2 pt-4 pl-4 ">
         <Image
           className="rounded-full"
