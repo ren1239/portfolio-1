@@ -1,5 +1,6 @@
 import React from "react";
 import TransitionLink from "./TransitionLink";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
@@ -8,9 +9,12 @@ export default function NavBar() {
         ER STUDIO
       </h1>
       <div className="flex gap-5">
-        <TransitionLink href="/" label="Home" />
+        {/* <TransitionLink href="/" label="Home" />
         <TransitionLink href="/about" label="About" />
-        <TransitionLink href="/contact" label="Contact" />
+        <TransitionLink href="/contact" label="Contact" /> */}
+        <Link href={"/"}>Home</Link>
+        <Link href={"/about"}>About</Link>
+        <Link href={"/contact"}>Contact</Link>
       </div>
     </nav>
   );
