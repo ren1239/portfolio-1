@@ -40,7 +40,7 @@ export default function Blob() {
           pointerEvents: "none",
           opacity: dimension.width > 0 ? 0 : 1,
         }}
-        className="bg-black z-20"
+        className="bg-black z-50"
       ></div>
       {dimension.width > 0 && <SVG {...dimension} />}
     </div>
@@ -103,7 +103,7 @@ const SVG = ({ width, height }: { width: number; height: number }) => {
         position: "fixed",
         pointerEvents: "none",
       }}
-      className="z-10"
+      className="z-50"
     >
       <motion.path {...anim(curveVarient)} fill="black"></motion.path>
     </motion.svg>
